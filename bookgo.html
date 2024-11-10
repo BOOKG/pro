@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookGO search</title>
+</head>
+<body>
+            <div class="container"></div>
+                <center>
+                    <input id="searchbar" 
+                    onkeyup="search_animal()" 
+                    type="text" name="search" 
+                    placeholder="Search animals..">
+                </center>
+
+                    <ul style="float: right;padding: 0px 300px;" id='list'>
+                        <a class="animals" href="Birth and Early Life 2.htm">Mark Zuckerberg story</a>
+                        <div style="padding: 10px 0px;"></div>
+                        <a class="animals" href="World War I4.htm">World War I</a>
+                    </ul>
+
+                    <ul style="float: left;padding: 0px 300px;" id='list'>
+                        <a class="animals" href="Steve Jobs.htm">steve jobs story</a>
+                        <div style="padding: 10px 0px;"></div>
+                        <a class="animals" href="World War II 5.htm">World War II</a>
+                    </ul>
+                <center>
+                    <ul id='list'>
+                        <a class="animals" href="Elon Musk 1.htm"><center>Elon Musk story</center></a>
+                        <div style="padding: 1px 0px;"></div>
+                        <a class="animals" href="The Evolution of Technology 6.htm">Technology development</a>
+                    </ul>
+                </center>
+            </div>
+
+    <script src="./script.js"></script>
+    <style>
+        body{
+            background-color: rgb(242, 242, 255);
+        }
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#searchbar {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 700px;
+    box-sizing: border-box;
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.animals {
+    padding: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+
+    text-decoration: none;color: black;font-size: 1,4em;font-weight: 500;
+}
+
+.animals:last-child {
+    border-bottom: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+</body>
+</html>
